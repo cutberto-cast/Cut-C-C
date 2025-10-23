@@ -2,7 +2,7 @@
 
 Un portafolio profesional, escalable y mantenible para un Full-Stack Developer desarrollado con TypeScript, React y Next.js.
 
-## 🚀 Características
+## Características
 
 - **Moderno y Responsivo**: Diseño moderno con Tailwind CSS y componentes de shadcn/ui
 - **TypeScript**: Tipado estático para mayor seguridad y mantenibilidad
@@ -15,7 +15,7 @@ Un portafolio profesional, escalable y mantenible para un Full-Stack Developer d
 - **Accesibilidad**: Cumple estándares WCAG AA
 - **Testing**: Vitest para unit tests y Playwright para E2E
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 
 ### Frontend
 - **Next.js 16** - Framework React con App Router
@@ -42,7 +42,7 @@ Un portafolio profesional, escalable y mantenible para un Full-Stack Developer d
 - **Vitest** - Testing unitario
 - **Playwright** - Testing E2E
 
-## 📦 Instalación
+##  Instalación
 
 1. **Clonar el repositorio**
    ```bash
@@ -80,7 +80,7 @@ Un portafolio profesional, escalable y mantenible para un Full-Stack Developer d
    npm run dev
    ```
 
-## 🗄️ Base de Datos
+##  Base de Datos
 
 El proyecto utiliza PostgreSQL con Prisma ORM. Los modelos incluyen:
 
@@ -92,41 +92,7 @@ El proyecto utiliza PostgreSQL con Prisma ORM. Los modelos incluyen:
 - **Experience** - Experiencia laboral
 - **Education** - Formación académica
 
-### Migraciones
-
-```bash
-# Crear migración
-npx prisma migrate dev --name init
-
-# Aplicar migraciones
-npx prisma migrate deploy
-
-# Resetear base de datos
-npx prisma migrate reset
-```
-
-## 🔐 Autenticación
-
-El sistema de autenticación utiliza NextAuth.js con soporte para:
-
-- **Email/Password** - Autenticación tradicional
-- **Google OAuth** - Login con Google
-- **GitHub OAuth** - Login con GitHub
-
-### Configuración OAuth
-
-1. **Google OAuth**
-   - Ve a [Google Cloud Console](https://console.cloud.google.com/)
-   - Crea un proyecto y habilita Google+ API
-   - Crea credenciales OAuth 2.0
-   - Añade `GOOGLE_CLIENT_ID` y `GOOGLE_CLIENT_SECRET` al `.env.local`
-
-2. **GitHub OAuth**
-   - Ve a [GitHub Developer Settings](https://github.com/settings/developers)
-   - Crea una nueva OAuth App
-   - Añade `GITHUB_ID` y `GITHUB_SECRET` al `.env.local`
-
-## 📝 Panel Administrativo
+##  Panel Administrativo
 
 El panel administrativo permite:
 
@@ -139,7 +105,7 @@ El panel administrativo permite:
 
 Accede al panel en `/admin` (requiere autenticación).
 
-## 🧪 Testing
+##  Testing
 
 ### Unit Tests (Vitest)
 ```bash
@@ -156,7 +122,7 @@ npm run test:e2e
 npm run test:coverage
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Vercel (Recomendado)
 
@@ -177,7 +143,7 @@ npm run test:coverage
 - **Railway**: Para full-stack deployment
 - **Render**: Alternativa a Vercel
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 portfolio/
@@ -206,7 +172,7 @@ portfolio/
 └── tests/                     # Tests
 ```
 
-## 🎨 Personalización
+##  Personalización
 
 ### Colores y Tema
 
@@ -220,72 +186,11 @@ Los colores se configuran en `tailwind.config.ts` y `src/app/globals.css`:
 }
 ```
 
-### Contenido
-
-1. **Información Personal**
-   - Edita `src/app/page.tsx` para cambiar la información personal
-   - Actualiza `src/app/about/page.tsx` para tu biografía
-
-2. **Proyectos**
-   - Añade proyectos desde el panel admin o directamente en la base de datos
-   - Cada proyecto puede tener imágenes, tecnologías, y enlaces
-
-3. **Blog**
-   - Crea artículos desde el panel admin
-   - Soporte para MDX con sintaxis resaltada
-
-## 🔧 Scripts Disponibles
-
-```bash
-# Desarrollo
-npm run dev          # Servidor de desarrollo
-npm run build        # Build de producción
-npm run start        # Servidor de producción
-
-# Base de datos
-npm run db:generate  # Generar cliente Prisma
-npm run db:push      # Sincronizar esquema
-npm run db:migrate   # Ejecutar migraciones
-npm run db:studio    # Abrir Prisma Studio
-
-# Testing
-npm run test         # Unit tests
-npm run test:e2e     # E2E tests
-npm run test:ui      # Tests con UI
-
-# Linting
-npm run lint         # ESLint
-npm run lint:fix     # Fix automático
-npm run format       # Prettier
-
-# Otros
-npm run type-check   # Verificar tipos
-npm run clean        # Limpiar build
-```
-
-## 🤝 Contribución
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
+##  Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 
-## 📞 Contacto
+##  Contacto
 
 - **Email**: cutberto@example.com
-- **GitHub**: [@cutberto](https://github.com/cutberto)
 - **LinkedIn**: [Cutberto](https://linkedin.com/in/cutberto)
-
-## 🙏 Agradecimientos
-
-- [Next.js](https://nextjs.org/) - Framework React
-- [Tailwind CSS](https://tailwindcss.com/) - Framework de estilos
-- [shadcn/ui](https://ui.shadcn.com/) - Componentes UI
-- [Prisma](https://prisma.io/) - ORM
-- [tRPC](https://trpc.io/) - Comunicación tipada
-- [NextAuth.js](https://next-auth.js.org/) - Autenticación
